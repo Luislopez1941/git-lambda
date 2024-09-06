@@ -1,0 +1,24 @@
+name: Run Function
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Ejecutar cada minuto
+
+jobs:
+  run_function:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # Usa Node.js 14
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run the function
+      run: node path/to/your-function.js
