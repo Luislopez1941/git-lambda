@@ -15,7 +15,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 'v20.10.0'  # O la versión de Node.js que estés usando
+        node-version: '18'  # O la versión de Node.js que estés usando
 
     - name: Ejecutar script
       run: node path/to/your-function.js
