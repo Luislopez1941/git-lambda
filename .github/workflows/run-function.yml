@@ -1,8 +1,8 @@
 name: Run Function
 
-on:
-  schedule:
-    - cron: "*/5 * * * *"  # Esto se ejecuta cada minuto
+# on:
+#   schedule:
+#     - cron: "*/5 * * * *"  # Esto se ejecuta cada minuto
 
 jobs:
   run_function:
